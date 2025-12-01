@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta
+      name="description"
+      content="Entre em contato comigo para projetos, colaborações e oportunidades profissionais."
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Contato</title>
+    <!-- Script inline para aplicar tema ANTES do CSS carregar (evita flash) -->
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header id="site-header" role="banner">
+      <div id="nav-root"></div>
+    </header>
+
+    <main role="main">
+      <h1>Entre em Contato</h1>
+
+      <section class="availability">
+        <h2>Disponibilidade</h2>
+        <div class="availability-info">
+          <div class="status-badge available">
+            Disponível para novos projetos
+          </div>
+          <p>Atualmente aceitando propostas para:</p>
+          <ul>
+            <li>Desenvolvimento Full Stack (Node.js + React)</li>
+            <li>Desenvolvimento de APIs RESTful</li>
+            <li>Projetos de integração de sistemas</li>
+            <li>Automação e processamento de dados com Python</li>
+          </ul>
+          <p class="response-time">
+            <strong>Tempo de resposta:</strong> Normalmente respondo em até 24
+            horas durante dias úteis.
+          </p>
+          <p>
+            <strong>Trabalho remoto:</strong> Sim, disponível para projetos
+            remotos.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-methods" aria-label="Métodos de contato">
+        <article class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h2>Email</h2>
+          <p>Para propostas profissionais e projetos</p>
+          <button onclick="enviarEmail()" class="btn btn-primary">
+            Enviar Email
+          </button>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-icon">💬</div>
+          <h2>WhatsApp</h2>
+          <p>Para conversas rápidas e networking</p>
+          <button onclick="enviarWhatsApp()" class="btn btn-primary">
+            Abrir WhatsApp
+          </button>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-icon">💼</div>
+          <h2>LinkedIn</h2>
+          <p>Conecte-se profissionalmente</p>
+          <a
+            href="https://www.linkedin.com/in/fabio-s-49a7322bb"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            Visitar Perfil
+          </a>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <h2>GitHub</h2>
+          <p>Veja meus projetos e código</p>
+          <a
+            href="https://github.com/FabinhoSchramm"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            Visitar GitHub
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <!-- Modal de Contato por Email -->
+    <div id="emailModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Enviar Mensagem por Email</h2>
+          <button
+            class="modal-close"
+            onclick="fecharModal()"
+            aria-label="Fechar modal"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <form
+            class="contact-form"
+            id="modalContactForm"
+            onsubmit="return handleFormSubmit(event)"
+          >
+            <div class="form-group">
+              <label for="modal-name">Nome Completo *</label>
+              <input
+                type="text"
+                id="modal-name"
+                name="name"
+                required
+                placeholder="Seu nome"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="modal-email">Email *</label>
+              <input
+                type="email"
+                id="modal-email"
+                name="email"
+                required
+                placeholder="seuemail@exemplo.com"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="modal-phone">Telefone</label>
+              <input
+                type="tel"
+                id="modal-phone"
+                name="phone"
+                placeholder="(00) 00000-0000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="modal-subject">Assunto *</label>
+              <select
+                id="modal-subject"
+                name="subject"
+                required
+                aria-required="true"
+              >
+                <option value="">Selecione um assunto</option>
+                <option value="projeto">Proposta de Projeto</option>
+                <option value="emprego">Oportunidade de Emprego</option>
+                <option value="freelance">Trabalho Freelance</option>
+                <option value="parceria">Parceria</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="modal-message">Mensagem *</label>
+              <textarea
+                id="modal-message"
+                name="message"
+                rows="6"
+                required
+                placeholder="Conte-me mais sobre seu projeto ou proposta..."
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <div class="modal-actions">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="fecharModal()"
+              >
+                Cancelar
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensagem
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer id="site-footer">
+      <p>© <span id="ano">2025</span></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

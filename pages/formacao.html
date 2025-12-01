@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta
+      name="description"
+      content="Minha formação acadêmica, certificações e habilidades técnicas em desenvolvimento de software."
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Formação</title>
+    <!-- Script inline para aplicar tema ANTES do CSS carregar  -->
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header id="site-header" role="banner">
+      <div id="nav-root"></div>
+    </header>
+
+    <main role="main">
+      <section class="education-section" aria-labelledby="academic-title">
+        <h2 id="academic-title">Formação Acadêmica</h2>
+
+        <article class="education-item">
+          <div class="education-header">
+            <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+            <span class="period">Em andamento</span>
+          </div>
+          <p class="institution">
+            UNITER - Centro Universitário de Tecnologia e Educação
+          </p>
+          <p class="description">
+            Formação focada em desenvolvimento de software, engenharia de
+            sistemas, banco de dados, arquitetura de aplicações, metodologias
+            ágeis e gestão de projetos.
+          </p>
+        </article>
+
+        <article class="education-item">
+          <div class="education-header">
+            <h3>Técnico em Eletromecânica</h3>
+            <span class="period">Concluído</span>
+          </div>
+          <p class="institution">
+            Centro Estadual de Educação Profissional de Curitiba
+          </p>
+          <p class="description">
+            Formação técnica em sistemas eletromecânicos, automação industrial,
+            manutenção preventiva e corretiva de equipamentos.
+          </p>
+        </article>
+      </section>
+
+      <section class="certifications-section">
+        <h2>Idiomas</h2>
+
+        <article class="cert-item">
+          <h3>Inglês - Nível Avançado</h3>
+          <p class="institution">Microcamp</p>
+          <p class="cert-details">
+            Proficiência avançada em inglês com capacidade de leitura técnica,
+            comunicação verbal e escrita para ambientes profissionais.
+          </p>
+        </article>
+      </section>
+
+      <section class="certifications-section">
+        <h2>Certificações & Cursos</h2>
+
+        <article class="cert-item">
+          <h3>Python & Django - Desenvolvimento Web Full Stack</h3>
+          <p class="cert-details">
+            Desenvolvimento de dashboards interativos, automação de processos,
+            integração com APIs externas (Google Maps, Google Sheets) e
+            visualização de dados com ChartJS e Pandas.
+          </p>
+        </article>
+
+        <article class="cert-item">
+          <h3>Telemetria e Rastreamento Veicular</h3>
+          <p class="cert-details">
+            Configuração de equipamentos GNSS/GPS, desenvolvimento de soluções
+            de telemetria (RPM, OBD, sensores diversos), implementação de
+            sensores de fadiga com RFID e gerenciamento remoto de dispositivos.
+          </p>
+        </article>
+
+        <article class="cert-item">
+          <h3>Automação com Python & Bash</h3>
+          <p class="cert-details">
+            Desenvolvimento de scripts automatizados, agendamento de tarefas
+            (cron), gerenciamento de processos (cpulimit), criação de bots para
+            renovação de logins e sistemas de retomada automática após falhas.
+          </p>
+        </article>
+
+        <article class="cert-item">
+          <h3>Node.js & Express - Desenvolvimento Backend</h3>
+          <p class="cert-details">
+            Desenvolvimento de APIs RESTful, autenticação JWT, integração com
+            bancos de dados e boas práticas de arquitetura backend.
+          </p>
+        </article>
+
+        <article class="cert-item">
+          <h3>React - Desenvolvimento Frontend Moderno</h3>
+          <p class="cert-details">
+            Criação de SPAs, gerenciamento de estado, hooks, componentização e
+            otimização de performance.
+          </p>
+        </article>
+
+        <article class="cert-item">
+          <h3>MongoDB - Banco de Dados NoSQL</h3>
+          <p class="cert-details">
+            Modelagem de dados, queries avançadas, agregações, índices e
+            otimização de performance para aplicações escaláveis.
+          </p>
+          <div class="badges">
+            <div
+              class="badge-mongodb"
+              data-iframe-width="150"
+              data-iframe-height="270"
+              data-share-badge-id="cdae7cee-3e12-4ee4-b0be-5144e0a4b850"
+              data-share-badge-host="https://www.credly.com"
+            ></div>
+            <script
+              type="text/javascript"
+              async
+              src="//cdn.credly.com/assets/utilities/embed.js"
+            ></script>
+            <div
+              class="badge-mongodb"
+              data-iframe-width="150"
+              data-iframe-height="270"
+              data-share-badge-id="e20396dd-f2cc-42e3-8d1b-fbf2a338b785"
+              data-share-badge-host="https://www.credly.com"
+            ></div>
+            <script
+              type="text/javascript"
+              async
+              src="//cdn.credly.com/assets/utilities/embed.js"
+            ></script>
+          </div>
+        </article>
+
+        <article class="cert-item">
+          <h3>Data Analysis com Python</h3>
+          <p class="cert-details">
+            Processamento e análise de dados em larga escala com Pandas, NumPy,
+            Geopy para geocodificação, integração com Google Sheets API e
+            geração de relatórios automatizados.
+          </p>
+        </article>
+
+        <article class="cert-item">
+          <h3>Git & GitHub - Versionamento e Colaboração</h3>
+          <p class="cert-details">
+            Controle de versão, branching strategies, pull requests, code review
+            e colaboração em equipe.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer id="site-footer">
+      <p>© <span id="ano">2025</span></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta
+      name="description"
+      content="Desenvolvedor Full Stack especializado em automação, sistemas web e telemetria. Estagiário de Desenvolvimento na Polícia Científica do Paraná."
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Bem vindo ao meu portifolio</title>
+    <!-- Script inline para aplicar tema ANTES do CSS carregar -->
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Header semântico com navbar injetada pelo JavaScript -->
+    <header id="site-header" role="banner">
+      <!-- O script irá inserir a navbar aqui em todas as páginas -->
+      <div id="nav-root"></div>
+    </header>
+
+    <main id="main-content" role="main">
+      <section class="hero" aria-labelledby="intro-title">
+        <h1 id="intro-title">Desenvolvedor Full Stack</h1>
+        <p class="subtitle">
+          Especializado em automação, sistemas web e soluções de telemetria com
+          Python, Node.js e React.js
+        </p>
+        <div class="cta-buttons">
+          <a href="pages/portifolio.html" class="btn btn-primary"
+            >Ver Projetos</a
+          >
+          <a href="pages/contato.html" class="btn btn-secondary"
+            >Entre em Contato</a
+          >
+        </div>
+      </section>
+
+      <section id="destaque-projeto" aria-labelledby="destaque-title">
+        <h2 id="destaque-title">Projeto em Destaque</h2>
+        <article class="project-featured">
+          <div class="project-header">
+            <h3>S.I.G.M.A</h3>
+            <span class="project-tag">Full Stack</span>
+          </div>
+          <p class="project-subtitle">
+            Sistema Integrado de Gerenciamento de Manutenção e Abastecimento
+          </p>
+
+          <div class="project-description">
+            <p>
+              Sistema corporativo para gestão integrada de frota veicular,
+              desenvolvido para otimizar o controle de abastecimento e
+              manutenção de veículos da instituição.
+            </p>
+
+            <h4>Principais Funcionalidades</h4>
+            <ul class="features-list">
+              <li>
+                <strong>Gestão de Frota:</strong> Controle completo de veículos
+                (VTR) com cadastro, edição e upload de fotos
+              </li>
+              <li>
+                <strong>Sistema de Empréstimo:</strong> Solicitação e aprovação
+                de empréstimo de veículos entre unidades
+              </li>
+              <li>
+                <strong>Controle por UETC:</strong> Cada usuário visualiza
+                apenas os dados de sua unidade específica
+              </li>
+              <li>
+                <strong>Níveis de Acesso:</strong> Sistema hierárquico com
+                permissões diferenciadas por cargo
+              </li>
+              <li>
+                <strong>Manutenção Preventiva e Corretiva:</strong> Controle
+                completo com status em tempo real
+              </li>
+              <li>
+                <strong>Planos Personalizados:</strong> Criação de pacotes de
+                manutenção customizados por administradores
+              </li>
+              <li>
+                <strong>Análise de Eficiência:</strong> Cálculo automático de
+                eficiência de combustível e custos de manutenção por família de
+                veículos
+              </li>
+              <li>
+                <strong>Importação de Dados:</strong> Upload de arquivos com
+                processamento automatizado via Python/Pandas
+              </li>
+              <li>
+                <strong>Relatórios e Dashboards:</strong> Visualização de dados
+                com gráficos e relatórios personalizados
+              </li>
+            </ul>
+
+            <h4>Stack Tecnológica</h4>
+            <div class="tech-stack">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">JWT</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">REST API</span>
+            </div>
+          </div>
+
+          <a href="pages/portifolio.html" class="btn btn-primary"
+            >Ver Mais Projetos</a
+          >
+        </article>
+      </section>
+
+      <section id="skills-preview" aria-labelledby="skills-title">
+        <h2 id="skills-title">Competências Principais</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <p>Node.js, Express, Python, REST APIs, JWT, MongoDB</p>
+          </div>
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <p>React, HTML5, CSS3, JavaScript, Responsive Design</p>
+          </div>
+          <div class="skill-card">
+            <h3>Dados</h3>
+            <p>MongoDB, Pandas, Data Processing, Analytics</p>
+          </div>
+          <div class="skill-card">
+            <h3>DevOps</h3>
+            <p>Git, GitHub, API Development, System Integration</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" role="contentinfo">
+      <p>© <span id="ano">2025</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

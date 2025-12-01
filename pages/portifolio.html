@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta
+      name="description"
+      content="Confira meus projetos de desenvolvimento, incluindo o S.I.G.M.A e outros sistemas web."
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Portifolio</title>
+    <!-- Script inline para aplicar tema ANTES do CSS carregar (evita flash) -->
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header id="site-header" role="banner">
+      <div id="nav-root"></div>
+    </header>
+
+    <main role="main">
+      <h1>Meus Projetos</h1>
+      <p class="portfolio-intro">
+        Seleção de projetos que demonstram minhas habilidades em desenvolvimento
+        full stack, desde sistemas empresariais complexos até ferramentas
+        práticas do dia a dia. Atualmente desenvolvendo o S.I.G.M.A como
+        <strong
+          >Estagiário de Desenvolvimento na Polícia Científica do Paraná</strong
+        >.
+      </p>
+
+      <section class="projects-container" aria-label="Lista de projetos">
+        <!-- Projeto Principal: SIGMA -->
+        <article class="project-card featured" aria-labelledby="sigma-title">
+          <div class="project-badge">🔥 Projeto Atual - Em Desenvolvimento</div>
+          <header class="project-header">
+            <h2 id="sigma-title">S.I.G.M.A</h2>
+            <p class="project-subtitle">
+              Sistema Integrado de Gerenciamento de Manutenção e Abastecimento
+            </p>
+          </header>
+
+          <div class="project-meta">
+            <span class="tag">Full Stack</span>
+            <span class="tag">Projeto Atual</span>
+            <span class="tag">Instituição Pública</span>
+          </div>
+
+          <div class="project-description">
+            <p>
+              <strong>Posição:</strong> Estagiário de Desenvolvimento - Polícia
+              Científica do Paraná
+            </p>
+            <p>
+              <strong>Status:</strong> Em desenvolvimento ativo utilizando
+              metodologia MVP
+            </p>
+
+            <p>
+              Sistema corporativo desenvolvido para otimizar a gestão de frota
+              veicular, integrando dados de abastecimento e manutenção em uma
+              plataforma unificada.
+            </p>
+
+            <p>
+              Responsável por todo o ciclo de desenvolvimento: levantamento de
+              requisitos, modelagem de dados, arquitetura de software,
+              implementação full stack, testes e deploy.
+            </p>
+
+            <h3>Funcionalidades Principais</h3>
+            <div class="features-grid">
+              <div class="feature-item">
+                <h4>📊 Dashboards & Relatórios</h4>
+                <p>
+                  Visualização de dados em tempo real com gráficos e relatórios
+                  personalizados para tomada de decisão
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>🚗 Gestão de Veículos</h4>
+                <p>
+                  Cadastro completo de VTR com fotos, edição, controle de status
+                  e histórico detalhado
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>🔐 Controle por UETC</h4>
+                <p>
+                  Sistema multi-tenant onde cada usuário visualiza apenas os
+                  dados de sua unidade específica
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>👥 Níveis de Acesso</h4>
+                <p>
+                  Hierarquia de cargos com permissões diferenciadas (usuário,
+                  supervisor, administrador)
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>🔄 Sistema de Empréstimo</h4>
+                <p>
+                  Solicitação, aprovação e controle de empréstimo de veículos da
+                  unidade
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>🔧 Manutenção Preventiva</h4>
+                <p>
+                  Controle automatizado com alertas baseados em quilometragem ou
+                  tempo (implementação)
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>⚙️ Manutenção Corretiva</h4>
+                <p>
+                  Registro de falhas, ordens de serviço e acompanhamento de
+                  reparos (implementação)
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>📦 Pacotes Personalizados</h4>
+                <p>
+                  Criação de planos de manutenção customizados por
+                  administradores
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>📈 Análise de Eficiência</h4>
+                <p>
+                  Cálculo automático de eficiência de combustível e custos por
+                  unidade, vtr e família de veículos
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>📁 Upload de Dados</h4>
+                <p>
+                  Importação de planilhas com processamento via Python/Pandas
+                </p>
+              </div>
+            </div>
+
+            <h3>Tecnologias Utilizadas</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">JWT Authentication</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">Chart.js</span>
+            </div>
+
+            <h3>Destaques Técnicos</h3>
+            <ul>
+              <li>
+                <strong>Arquitetura Full Stack:</strong> Responsável por backend
+                (Node.js/Express) e frontend (React.js)
+              </li>
+              <li>
+                <strong>API RESTful:</strong> Desenvolvimento de endpoints
+                seguros com documentação completa
+              </li>
+              <li>
+                <strong>Autenticação JWT:</strong> Sistema de segurança com
+                tokens e refresh tokens
+              </li>
+              <li>
+                <strong>Processamento de Dados:</strong> Pipeline assíncrono com
+                Python/Pandas para uploads em lote
+              </li>
+              <li>
+                <strong>Sistema de Permissões:</strong> Controle baseado em
+                niveis de acesso e unidades (UETC)
+              </li>
+              <li>
+                <strong>Banco de Dados:</strong> Modelagem complexa em MongoDB
+                com queries otimizadas
+              </li>
+              <li>
+                <strong>Upload de Arquivos:</strong> Sistema de armazenamento de
+                imagens e planilhas
+              </li>
+              <li>
+                <strong>Gestão do Projeto:</strong> Levantamento de requisitos,
+                análise, desenvolvimento e testes
+              </li>
+            </ul>
+
+            <h3>Responsabilidades & Metodologia</h3>
+            <ul>
+              <li>
+                Desenvolvimento de sistema para instituição pública utilizando
+                <strong>metodologia MVP</strong>
+              </li>
+              <li>Gestão do ciclo completo de desenvolvimento de software</li>
+              <li>
+                Comunicação com stakeholders para levantamento e refinamento de
+                requisitos
+              </li>
+              <li>
+                Aplicação prática de conceitos acadêmicos em projeto real de
+                grande porte
+              </li>
+              <li>
+                Experiência em ambiente corporativo com responsabilidade e
+                prazos
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projeto 2: Dashboard de Telemetria Veicular -->
+        <article class="project-card">
+          <header class="project-header">
+            <h2>Dashboard de Telemetria Veicular</h2>
+            <p class="project-subtitle">
+              Sistema Web de Visualização de Dados de Frota
+            </p>
+          </header>
+
+          <div class="project-meta">
+            <span class="tag">Django</span>
+            <span class="tag">Python</span>
+            <span class="tag">ChartJS</span>
+            <span class="tag">Pandas</span>
+          </div>
+
+          <div class="project-description">
+            <p><strong>Cliente:</strong> Cllick Solutions (2021 - 2023)</p>
+
+            <p>
+              Dashboard web interativo desenvolvido em Django para integração e
+              visualização de dados de consumo e telemetria veicular, permitindo
+              análise em tempo real de frotas para múltiplos clientes.
+            </p>
+
+            <h3>Funcionalidades Implementadas</h3>
+            <ul>
+              <li>
+                <strong>Visualização Gráfica:</strong> Gráficos interativos com
+                ChartJS mostrando consumo, eficiência e padrões de uso
+              </li>
+              <li>
+                <strong>Processamento de Dados:</strong> Pipeline automatizado
+                com Pandas para análise de grandes volumes de dados de
+                telemetria
+              </li>
+              <li>
+                <strong>Relatórios Personalizados:</strong> Sistema de geração
+                automática de relatórios customizados por cliente (<strong
+                  >otimização de 70% no tempo de entrega</strong
+                >)
+              </li>
+              <li>
+                <strong>Integração Multi-fonte:</strong> Consolidação de dados
+                de diferentes sensores (RPM, OBD, GPS, temperatura)
+              </li>
+              <li>
+                <strong>Correção Automática de GPS:</strong> Integração com
+                Google Maps API para correção automática de endereços via
+                coordenadas
+              </li>
+              <li>
+                <strong>Sistema de Alertas:</strong> Notificações automáticas
+                baseadas em regras de telemetria configuráveis
+              </li>
+            </ul>
+
+            <h3>Tecnologias Utilizadas</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Django</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">ChartJS</span>
+              <span class="tech-badge">Google Maps API</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+
+            <h3>Impacto</h3>
+            <ul>
+              <li>Redução de 70% no tempo de geração de relatórios</li>
+              <li>
+                Melhoria significativa na precisão de dados de localização
+              </li>
+              <li>
+                Dashboards customizados para múltiplos clientes simultâneos
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projeto 3: Sistema de Automação e Monitoramento -->
+        <article class="project-card">
+          <header class="project-header">
+            <h2>Sistema de Automação e Monitoramento</h2>
+            <p class="project-subtitle">
+              Bots e Scripts para Alta Disponibilidade de Sistemas
+            </p>
+          </header>
+
+          <div class="project-meta">
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">Automação</span>
+            <span class="tag">DevOps</span>
+          </div>
+
+          <div class="project-description">
+            <p><strong>Cliente:</strong> Cllick Solutions (2021 - 2023)</p>
+
+            <p>
+              Conjunto de ferramentas de automação desenvolvidas para garantir
+              disponibilidade contínua e otimização de processos críticos de
+              rastreamento veicular.
+            </p>
+
+            <h3>Soluções Implementadas</h3>
+            <ul>
+              <li>
+                <strong>Bot de Renovação de Logins:</strong> Sistema automático
+                de revalidação de sessões expiradas, garantindo disponibilidade
+                contínua do sistema de rastreamento
+              </li>
+              <li>
+                <strong>Correção Automática de Odômetro:</strong> Sistema
+                integrado com formulários web e envio de comandos SMS para
+                atualização remota de odômetros
+              </li>
+              <li>
+                <strong>Retomada Pós-Quedas:</strong> Mecanismo de recuperação
+                automática após quedas de energia, reiniciando serviços críticos
+                na ordem correta
+              </li>
+              <li>
+                <strong>Agendamento de Manutenção:</strong> Rotinas bash
+                executadas via cron com controle de CPU (cpulimit), reduzindo
+                falhas operacionais
+              </li>
+              <li>
+                <strong>Monitoramento Proativo:</strong> Scripts de verificação
+                contínua de serviços com alertas automatizados
+              </li>
+            </ul>
+
+            <h3>Tecnologias Utilizadas</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Bash Script</span>
+              <span class="tech-badge">Cron Jobs</span>
+              <span class="tech-badge">SMS Gateway</span>
+              <span class="tech-badge">Linux</span>
+              <span class="tech-badge">cpulimit</span>
+            </div>
+
+            <h3>Resultados</h3>
+            <ul>
+              <li>Disponibilidade do sistema próxima a 100%</li>
+              <li>Redução drástica em intervenções manuais</li>
+              <li>Recuperação automática em casos de falha de energia</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Projeto 4: YouTube to MP3 -->
+        <article class="project-card">
+          <header class="project-header">
+            <h2>YouTube to MP3</h2>
+            <p class="project-subtitle">
+              Conversor de Vídeos do YouTube para MP3
+            </p>
+          </header>
+
+          <div class="project-meta">
+            <span class="tag">Python</span>
+            <span class="tag">Automation</span>
+            <span class="tag">CLI Tool</span>
+          </div>
+
+          <div class="project-description">
+            <p>
+              Ferramenta de linha de comando desenvolvida em Python para
+              download e conversão automática de vídeos do YouTube para o
+              formato MP3, com suporte a playlists e processamento em lote.
+            </p>
+
+            <h3>Funcionalidades</h3>
+            <ul>
+              <li>Download de vídeos individuais ou playlists completas</li>
+              <li>Conversão automática para MP3 com qualidade ajustável</li>
+              <li>
+                Extração e preservação de metadados (título, artista, capa)
+              </li>
+              <li>Interface CLI intuitiva com barra de progresso</li>
+              <li>Organização automática de arquivos por pasta</li>
+              <li>Validação de URLs e tratamento de erros</li>
+            </ul>
+
+            <h3>Tecnologias</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">yt-dlp</span>
+              <span class="tech-badge">FFmpeg</span>
+              <span class="tech-badge">Mutagen</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/FabinhoSchramm/youtube_to_mp3"
+                class="btn-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Ver no GitHub →</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 3: Real-Time ODO Sync -->
+        <article class="project-card">
+          <header class="project-header">
+            <h2>Real-Time ODO Sync</h2>
+            <p class="project-subtitle">
+              Sincronização Automática de Odômetros Veiculares via SMS
+            </p>
+          </header>
+
+          <div class="project-meta">
+            <span class="tag">Python</span>
+            <span class="tag">Google Sheets API</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Automação</span>
+          </div>
+
+          <div class="project-description">
+            <p>
+              Projeto desenvolvido para resolver problema recorrente de precisão
+              de odômetro devido aos equipamentos GV55 e GV50 ficarem sem
+              conexão GSM/GPRS durante as rotas.
+            </p>
+
+            <h3>Problema Resolvido</h3>
+            <p>
+              Motoristas preenchem um Google Forms com placa, nome e odômetro
+              atual do veículo. O sistema monitora as respostas em tempo real e
+              envia comandos AT via SMS para atualizar automaticamente os
+              rastreadores dos veículos.
+            </p>
+
+            <h3>Funcionalidades</h3>
+            <ul>
+              <li>
+                Monitoramento contínuo de Google Sheets com polling de 5
+                segundos
+              </li>
+              <li>
+                Detecção automática de novos dados e atualização em tempo real
+              </li>
+              <li>
+                Envio de comandos AT via API de SMS para equipamentos GV50 e
+                GV55
+              </li>
+              <li>Integração com banco de dados MySQL para histórico</li>
+              <li>Sistema de log de erros para debugging</li>
+              <li>Validação de duplicatas antes de envio</li>
+              <li>Tratamento de exceções com reinício automático</li>
+              <li>Consulta de modelo e SIM card por placa do veículo</li>
+            </ul>
+
+            <h3>Tecnologias</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Python 3.12</span>
+              <span class="tech-badge">Google Sheets API</span>
+              <span class="tech-badge">OAuth2</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Requests</span>
+              <span class="tech-badge">gspread</span>
+            </div>
+
+            <h3>Destaques Técnicos</h3>
+            <ul>
+              <li>Integração com Google Sheets API usando OAuth2</li>
+              <li>Comandos AT personalizados para cada modelo de rastreador</li>
+              <li>Sistema de persistência para evitar comandos duplicados</li>
+              <li>Tratamento de erro com fallback e log em arquivo e banco</li>
+              <li>
+                Limitador de CPU (cpulimit) para otimizar recursos do servidor
+              </li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/FabinhoSchramm/real-time-odo-sync"
+                class="btn-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Ver no GitHub →</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 4: Reverse Geocode -->
+        <article class="project-card">
+          <header class="project-header">
+            <h2>Reverse Geocode</h2>
+            <p class="project-subtitle">
+              Conversão Automática de Coordenadas em Endereços
+            </p>
+          </header>
+
+          <div class="project-meta">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Geopy</span>
+            <span class="tag">Automação</span>
+          </div>
+
+          <div class="project-description">
+            <p>
+              Ferramenta de geocodificação reversa que processa planilhas Excel
+              com coordenadas GPS e as converte automaticamente em endereços
+              completos, facilitando a análise de dados de localização.
+            </p>
+
+            <h3>Funcionalidades</h3>
+            <ul>
+              <li>Leitura automática de arquivos Excel com coordenadas</li>
+              <li>Conversão de latitude/longitude em endereços</li>
+              <li>Suporte multiplataforma (Windows e Linux/macOS)</li>
+              <li>Processamento em lote de múltiplos arquivos</li>
+              <li>
+                Formatação de endereços (rua, número, bairro, cidade, estado,
+                CEP)
+              </li>
+              <li>Tratamento de coordenadas vazias ou inválidas</li>
+              <li>Geração automática de relatórios na pasta Documentos</li>
+              <li>Abertura automática da pasta de resultados ao finalizar</li>
+              <li>Limpeza automática de arquivos temporários</li>
+            </ul>
+
+            <h3>Tecnologias</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Geopy</span>
+              <span class="tech-badge">Nominatim</span>
+              <span class="tech-badge">OpenStreetMap</span>
+            </div>
+
+            <h3>Casos de Uso</h3>
+            <ul>
+              <li>Processamento de dados de rastreamento veicular</li>
+              <li>Enriquecimento de planilhas com informações de endereço</li>
+              <li>Geração de relatórios geográficos legíveis</li>
+              <li>Análise de rotas e localizações</li>
+            </ul>
+
+            <h3>Destaques Técnicos</h3>
+            <ul>
+              <li>
+                Detecção automática do sistema operacional para paths corretos
+              </li>
+              <li>
+                API Nominatim (OpenStreetMap) para geocodificação gratuita
+              </li>
+              <li>Tratamento de endereços incompletos</li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/FabinhoSchramm/reverse_geocode"
+                class="btn-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Ver no GitHub →</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="github-cta">
+        <h2>Mais Projetos</h2>
+        <p>
+          Confira todos os meus projetos e contribuições open source no GitHub:
+        </p>
+        <a
+          href="https://github.com/FabinhoSchramm"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener"
+        >
+          Visitar GitHub
+        </a>
+      </section>
+    </main>
+
+    <footer id="site-footer">
+      <p>© <span id="ano">2025</span></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
